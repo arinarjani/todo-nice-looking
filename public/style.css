@@ -1,0 +1,81 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+body {
+	background-color: #FFFBE6;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 100%;
+	line-height: 135%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-content: flex-start;
+}
+#txt-input {
+  border: none;
+  background-color: #B0B5FF;
+  font-size: 500%;
+  padding: 2rem;
+  width: 80%;
+  display: block;
+  box-sizing: border-box;
+  color: rgba(0,0,0,0.2);
+  outline: none;
+  align-self: flex-start;
+}
+#add-btn {
+  width: 20%;
+  font-size: 500%;
+  padding: 2rem;
+  border: none;
+  background-color: #63FFC6;
+  color: rgba(0, 0, 0, 0.5);
+  align-self: flex-start;
+  transition: all 0.5s;
+}
+#add-btn:hover {
+  background-color: #00FFA2;
+  color: rgba(255, 255, 255, 0.8);
+}
+#list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  flex-grow: 1;
+}
+li {
+ background-color: #FF9E3D;
+ font-size: 200%;;
+ cursor: pointer;
+ padding: 2rem;
+ transition: all 0.5s;
+ color: rgba(0, 0, 0, 0.5);
+}
+li:hover {
+  background-color: #FF7236; 
+  color: rgba(255, 255, 255, 0.7);
+}
+
+@media all and (max-width: 500px) {
+  #txt-input, #add-btn {
+    font-size: 200%;
+    padding: 1rem;
+  }
+  li {
+    font-size: 100%;
+    padding: 1rem;
+  }
+}
+@media all and (min-width: 500px) and (max-width: 1000px) {
+  #txt-input, #add-btn {
+    font-size: 300%;
+    padding: 1rem;
+  }
+  li {
+    font-size: 200%;
+    padding: 1rem;
+  }
+}
